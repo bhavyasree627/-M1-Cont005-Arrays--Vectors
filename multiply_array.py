@@ -15,12 +15,6 @@ Multiplication:
 
 Inside the loop, the current element i is multiplied with the current value of pro. This essentially accumulates the product of all elements encountered so far.
 The result is stored back into pro.
-Printing (Optional):
-
-The code snippet you provided includes a print(pro) statement within the function. However, the function itself doesn't return anything. If you want to print the product outside the function, you'll need to remove this print statement and make the function return pro.
-Return (Optional):
-
-The provided code snippet doesn't explicitly return anything from the multiply function. If you want to use the product value in other parts of your code, you'll need to add a return pro statement at the end of the function.
 Main Loop:
 
 The code takes an integer input t representing the number of test cases.
