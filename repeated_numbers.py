@@ -1,18 +1,16 @@
-def repeated(arr):
-    hash={}
-    res=[]
-    for i in arr:
-        if i not in hash:
-            hash[i]=1
-        else:
-            hash[i]+=1
-    for i in hash.keys():
-        if hash[i]>1:
-            res.append(i)
-    return res
-t=int(input())
+#hi
+t = int(input())
 for i in range(t):
-    n=int(input())
-    array=list(map(int,input().split()))
-    ans=repeated(array)
-    print(*ans)
+    a = int(input())
+    l = list(map(int, input().split()))
+    d = set()
+    s = []
+    for j in range(len(l)): 
+            if l[j] not in d:
+                d.add(l[j])
+            else:
+                s.append(l[j])
+    s.sort()
+    for k in s:
+        print(k, end=" ")
+    print()
